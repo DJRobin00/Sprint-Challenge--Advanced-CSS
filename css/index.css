@@ -7,6 +7,17 @@
   text-decoration: none;
   color: #23293B;
 }
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  padding: 5.5%;
+  background-color: #22283A;
+  color: #F6F7F8;
+  font-size: 1.85rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,10 +180,20 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  padding: 2%;
+  font-weight: bold;
+}
+nav a {
+  text-decoration: none;
+  color: #23293B;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
-  padding: 20px 0;
+  padding: 41px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
@@ -190,16 +211,6 @@ footer {
 }
 .top h1 {
   font-size: 4rem;
-}
-.top nav {
-  justify-content: space-evenly;
-  font-size: 1.5rem;
-  padding: 2%;
-  font-weight: bold;
-}
-.top nav a {
-  text-decoration: none;
-  color: #23293B;
 }
 .home .intro h2 {
   padding: 15px;
@@ -251,6 +262,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  padding: 5.5%;
+  background-color: #22283A;
+  color: #F6F7F8;
+  font-size: 1.85rem;
 }
 .home .walk .walk-img {
   width: 93%;
