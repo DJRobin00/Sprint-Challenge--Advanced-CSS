@@ -27,6 +27,9 @@
 
     img {
       height: 19vh;
+
+      @media @desktop {
+      width: 100%}
     }
 
     p {
@@ -47,10 +50,21 @@
       height: 100%;
       justify-content: center;
     }
-
-    .sky, .launch {
-      display: none;
+    @media @phone {
+      .sky, .launch {
+        display: none;
+      }
     }
+
+    @media @desktop {
+      .sky, .launch {
+        display: flex;
+      }
+      margin: auto;
+      flex-direction: row;
+      width: 20%;
+    }
+
   }
 
   .visit-planets {
