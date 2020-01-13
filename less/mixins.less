@@ -1,1 +1,23 @@
 // Mixins Here
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anchor-reset {
+    text-decoration: none;
+    color: @header-font-color;
+
+}
+
+.button {
+    .flex;
+    border: none;
+    border-radius: 4px;
+    padding: 5.5%;
+    background-color: @btn-bg-color;
+    color: @porcelain;
+    font-size: 1.85rem;
+}
