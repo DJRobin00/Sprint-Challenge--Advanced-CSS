@@ -23,20 +23,33 @@
 //     font-size: 1.85rem;}
 // }
 
-.button-style {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
-  .flex(center, center);
+.button-reset {
+    border-radius: 0px;
+    padding: 0%;
+    font-size: 0rem;
+    width:auto;
 }
 
-.mobile-button {
-    border: none;
+.button (@bg, @tx){
+    .flex(center, center);
+    border-radius: 6px;
+    padding: 2.3%; 
+    font-size: 2rem;
+    width: 29%;
+    background-color:@bg;
+    color: @tx;
+}
+
+.mobile-button (@bg, @tx){
+    .flex(center, center);
     border-radius: 4px;
     padding: 5.5%;
-    background-color: @btn-bg-color;
-    color: @porcelain;
     font-size: 1.85rem;
+    background-color: @bg;
+    color: @tx;
+}
+
+.hover-switch (@bg, @tx) {
+    background-color: @bg;
+    color: @tx;
 }

@@ -45,8 +45,7 @@
         display: none;
       }
     }
-    width: 98%;
-      margin-left: 2.5%;
+ 
   }
 
   .visit-planets {
@@ -84,13 +83,20 @@
       }
 
       .btn {
+        .button(@btn-bg-color, @porcelain);
 
-        .button-style;
         @media @phone {
-          .mobile-button;
+          .button-reset;
+          .mobile-button (@btn-bg-color, @porcelain);
+          border: solid 1px @porcelain;
           }
       }
       
+      .btn:hover {
+        .hover-switch (@porcelain, @btn-bg-color);
+        border: solid 1px @btn-bg-color;
+      }
+
       @media @phone {
         width: 96%;
         margin: 4% 0 -3% 4%;
