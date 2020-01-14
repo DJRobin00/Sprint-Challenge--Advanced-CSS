@@ -1,40 +1,26 @@
 // Home Content
 
-.top {
-  .flex;
-  flex-direction: column;
-  font-size: 1.5rem;
-  padding: 3%;
-  font-weight: bold;
-
-  h1 {
-    font-size: 4rem;
-  }
-
-
-  
-}
-
 .home {
-
-  
 
   .intro {
 
+    .main-image {
+      border-radius: 6px;
+
+      @media @phone {
+        height: 19vh;
+      }
+    }
+      
     h2 {
       padding: 15px;
-    }
-
-    img {
-      height: 19vh;
-
-      @media @desktop {
-      width: 100%}
     }
 
     p {
       padding:0 15px;
     }
+
+    
   
   }
 
@@ -44,27 +30,23 @@
     width: 100%;
 
     img {
-      width: 90%;
+      width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-      justify-content: center;
+
+      @media @phone {
+        width: 98% 
+        }
     }
+
     @media @phone {
       .sky, .launch {
         display: none;
       }
     }
-
-    @media @desktop {
-      .sky, .launch {
-        display: flex;
-      }
-      margin: auto;
-      flex-direction: row;
-      width: 20%;
-    }
-
+    width: 98%;
+      margin-left: 2.5%;
   }
 
   .visit-planets {
@@ -80,16 +62,14 @@
   }
 
   .walk {
-    .flex;
-    flex-direction: column-reverse;
-    margin-top: 25px;
+    margin-top: 60px;
     border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
     display: flex;
     justify-content: center;
 
     .walk-text {
-    
-      width: 92%;
+      width: 50%;
 
       h3 {
         margin-bottom: 10px;
@@ -97,24 +77,51 @@
 
       p {
         margin-bottom: 26px;
+
+        @media @phone {
+          
+        }
       }
 
       .btn {
-        .button;
+
+        .button-style;
+        @media @phone {
+          .mobile-button;
+          }
+      }
+      
+      @media @phone {
+        width: 96%;
+        margin: 4% 0 -3% 4%;
+
       }
     }
 
     .walk-img {
-      width: 93%;
-      margin: 3% 0 3% 0;
-      
+      width: 46%;
+      margin-left: 4%;
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
+
+      @media @phone {
+        width: 95%;
+      }
+      
+    }
+
+    @media @phone {
+      width: 100%;
+      margin: 0%;
+      margin-top:1%;
+      padding:1%;
+      padding: 8% 0 8% 0;
+      .flex (center, center);
+      flex-direction: column-reverse;
     }
   }
-
 }// home

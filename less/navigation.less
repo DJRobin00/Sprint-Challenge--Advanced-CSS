@@ -1,13 +1,49 @@
 // Navigation code here
 
-nav{
-    justify-content: space-evenly;
-      font-size: 1.5rem;
-      padding: 2%;
-      font-weight: bold;
-      a {
-        .anchor-reset;
-        
+.top {
+  .flex (center, center);
+  flex-direction: column;
+  padding: 1%;
+  padding-top: 1.1%;
+  
+
+  h1 {
+    font-size: 3.87rem;
     
-      }
+    @media @phone{
+      margin-left: 5%;
+    }
   }
+  
+  
+  nav {
+    .flex (space-evenly, center);
+    font-size: 1.55rem;
+    padding: 1%;
+    padding-top: 2%;
+    font-weight: bold;
+
+    @media @phone {
+      width: 95%;
+      padding: 0%;
+      padding-top: 0%;
+
+      padding: 4% 1% 1% 1%;
+    }
+      
+    a {
+      .anchor-reset;
+          
+      
+    }
+  }
+
+  @media @phone {
+    padding: 0%;
+    padding-top: 0%;
+
+    margin-top: 2%;
+    padding: 1% 4% 2% 4%;
+  }
+
+}

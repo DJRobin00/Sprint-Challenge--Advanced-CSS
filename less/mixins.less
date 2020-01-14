@@ -1,9 +1,9 @@
 // Mixins Here
 
-.flex {
+.flex (@j, @a) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: @j;
+    align-items: @a;
 }
 
 .anchor-reset {
@@ -12,8 +12,27 @@
 
 }
 
-.button {
-    .flex;
+// .button-styles {
+ //       @media @phone {
+//     .flex;
+//     border: none;
+//     border-radius: 4px;
+//     padding: 5.5%;
+//     background-color: @btn-bg-color;
+//     color: @porcelain;
+//     font-size: 1.85rem;}
+// }
+
+.button-style {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  .flex(center, center);
+}
+
+.mobile-button {
     border: none;
     border-radius: 4px;
     padding: 5.5%;
